@@ -5,3 +5,4 @@
     2.agentul poate comanda o cantitate dintr-un produs. După orice comanda valida, toti agentii logati  în  aplicație  vor  vedea  lista  actualizata  a  stocurilor  (este  posibil  ca  declansarea  înregistrarii unei comenzi din partea unui agent sa conduca la un mesaj informativ "cantitate insuficienta în stoc").
     3.agentul are un cont propriu cu username si parola de pe care plaseaza comenzi 
     4.agentul poate sa vada un istoric al comenzilor facute de catre el
+    5.exista un cont de firma care poate adauga stoc de produse noi 
