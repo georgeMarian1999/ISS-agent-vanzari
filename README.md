@@ -6,3 +6,4 @@
     3.agentul are un cont propriu cu username si parola de pe care plaseaza comenzi 
     4.agentul poate sa vada un istoric al comenzilor facute de catre el
     5.exista un cont de firma care poate adauga stoc de produse noi 
+    6.firma poate sa vada comenzile plasate
