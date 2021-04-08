@@ -1,0 +1,97 @@
+.bodyProductsScreen{
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: table;
+    margin:0;
+}
+div.navigation{
+    display: flex;
+    position: absolute;
+    right:1%;
+    width: auto;
+    padding: 5px;
+    margin:5px;
+    height:70px;
+}
+div.navigation Button{
+    color: black;
+    min-width: 20px;
+    background: bisque;
+    z-index: 1;
+    margin: 5px;
+}
+p{
+    font-family: Helvetica, sans-serif;
+}
+.link {
+    text-decoration: none;
+}
+.link:visited{
+    color: black;
+}
+.logoAgentScreen{
+    width: 150px;
+    height: 150px;
+    left: 1%;
+    z-index: 1;
+    animation-name: logoAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    position: absolute;
+    background: cornsilk;
+}
+.allProducts{
+    margin-top: 150px;
+    /*margin-left: 15px;*/
+    margin-right: 15px;
+    width: 100%;
+    display: flex;
+    height: 600px;
+}
+div.allProducts .list{
+    background: bisque;
+    width: 90%;
+    z-index: 1;
+    padding: 15px;
+    display: flex;
+    height: auto;
+}
+.allProducts > img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    width: 100%;
+    left:0;
+    height: auto;
+}
+.product{
+    margin:5px;
+    padding: 5px;
+}
+.paper{
+    background: snow;
+    padding: 10px;
+    z-index: 1;
+    max-width: 400px;
+    margin: auto;
+}
+.image{
+    width: 128px;
+    height: 128px;
+}
+.img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+@keyframes logoAnimation {
+    from {
+        transform: scale(0.3);
+    }
+    to {
+        transform: scale(1);
+    }
+
+}

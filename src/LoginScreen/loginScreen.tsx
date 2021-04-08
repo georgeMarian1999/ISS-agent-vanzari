@@ -4,9 +4,12 @@ import Logo from './georgeLogo150-150.png'
 import {Button, Input, InputLabel, TextField} from "@material-ui/core";
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import footerBack from './footerBackground.jpeg';
-import footerBack2 from './footer2.jpeg';
-import footerBack3 from './footer3.jpeg';
+import {useHistory} from "react-router";
 const LoginScreen = ( )=>{
+    const history=useHistory();
+    function onLogin(){
+       history.push('/agentDashboard')
+    }
     return(
             <div className="body">
                 <header className="header">
@@ -30,12 +33,14 @@ const LoginScreen = ( )=>{
                         <InputLabel htmlFor="password">Password</InputLabel>
                         <Input
                             id="password"
+                            placeholder="Your password"
                             type={'password'}
                             fullWidth
                         />
                     </div>
                     <div className="buttonWrapper">
                         <Button
+                            onClick={onLogin}
                             variant="contained"
                             color="primary"
                             size="large"

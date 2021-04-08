@@ -1,0 +1,127 @@
+.bodyAgentScreen{
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: table;
+    margin:0;
+}
+div.navigation{
+    display: flex;
+    position: absolute;
+    right:1%;
+    width: auto;
+    padding: 5px;
+    z-index: 1;
+    margin:5px;
+    animation-name:__slideInDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    height:70px;
+}
+@keyframes logoAnimation {
+    from {
+        transform: scale(0.3);
+    }
+    to {
+        transform: scale(1);
+    }
+
+}
+@keyframes __slideInDown {
+    from {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+div.navigation Button{
+    color: black;
+    min-width: 20px;
+    background: bisque;
+    z-index: 1;
+    margin: 5px;
+}
+p{
+    font-family: Helvetica, sans-serif;
+}
+.link {
+    text-decoration: none;
+}
+.link:visited{
+    color: black;
+}
+.logoAgentScreen{
+    width: 150px;
+    height: 150px;
+    left: 1%;
+    z-index: 1;
+    animation-name: logoAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    position: absolute;
+    background: cornsilk;
+}
+div.mainContent{
+    /*position: relative;*/
+    margin-top: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+div.mainContent .introduction{
+    background: bisque;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    height: 600px;
+}
+div.mainContent .introduction > .introductionText {
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+}
+@keyframes fade {
+    from {
+        transform: scale(0.8);
+        opacity: 0.3;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+div.mainContent > img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    width: 100%;
+    left:0;
+    height: auto;
+}
+header.agentScreen {
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    z-index: 1;
+    animation-name :__bounceInDown;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    background: burlywood;
+    position: relative;
+}
+@keyframes __bounceInDown {
+    from {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

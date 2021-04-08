@@ -1,0 +1,38 @@
+.introductionSlider{
+    width: 65%;
+    border-radius: 10px;
+    height: 80%;
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    background-color: bisque;
+}
+ul.productslider {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin:10px;
+    padding: 5px;
+    list-style-type: none;
+}
+div.productcontent > img{
+    width: 40%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+    height: auto;
+}
+ul.productslider li {
+    animation-name: fade;
+    animation-duration: 1s;
+    display: none;
+    width: 100%;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+ul.productslider li div.productcontent {
+    width: 100%;
+    height: auto;
+}
