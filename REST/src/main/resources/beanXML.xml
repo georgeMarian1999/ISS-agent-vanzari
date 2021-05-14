@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:properties id="jdbcProps" location="classpath:bd.config"/>
+    <bean id="firmaRepo" class="Repo.FirmaRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+    <bean id="produsRepo" class="Repo.ProdusRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+    <bean id="userRepo" class="Repo.UserRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+    <bean id="comandaRepo" class="Repo.ComandaRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+    <bean id="stocRepo" class="Repo.StocRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+    <bean id="Service" class="Service.Service">
+        <constructor-arg ref="firmaRepo"/>
+        <constructor-arg ref="produsRepo"/>
+        <constructor-arg ref="userRepo"/>
+        <constructor-arg ref="comandaRepo"/>
+        <constructor-arg ref="stocRepo"/>
+    </bean>
+
+</beans>

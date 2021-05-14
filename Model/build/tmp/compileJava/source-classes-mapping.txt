@@ -1,0 +1,24 @@
+Model/AngajatType.java
+ Model.AngajatType
+Model/User.java
+ Model.User
+Model/Status.java
+ Model.Status
+Model/Comanda.java
+ Model.Comanda
+Model/Produs.java
+ Model.Produs
+Model/Firma.java
+ Model.Firma
+RequestModel/ResponseProdus.java
+ RequestModel.ResponseProdus
+RequestModel/loginUser.java
+ RequestModel.loginUser
+Model/Stoc.java
+ Model.Stoc
+RequestModel/RequestComanda.java
+ RequestModel.RequestComanda
+RequestModel/RequestStoc.java
+ RequestModel.RequestStoc
+RequestModel/RequestProdus.java
+ RequestModel.RequestProdus

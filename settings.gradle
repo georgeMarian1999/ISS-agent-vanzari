@@ -1,0 +1,5 @@
+rootProject.name = 'ISSProject'
+include 'Model'
+include 'Persistance'
+include 'REST'
+
